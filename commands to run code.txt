@@ -1,0 +1,19 @@
+python main.py -extract-collection aesopa10.txt
+
+python main.py -model "bool" -search-mode "linear" -documents "original" -query "lion"
+
+python main.py -model "bool" -search-mode "linear" -documents "original" -stemming "true" -query "strutting"
+
+python main.py -model "bool" -search-mode "inverted" -documents "original" -query "excuse&seize"
+
+python main.py -model "vector" -documents "original" -query "lion"
+
+Use Cases:
+
+peck|pearls
+
+excuse&seize
+
+!lion
+
+As we were facing the issue while placing '-' as a parameter in cmd so, that's why we used '!' for NOT.
